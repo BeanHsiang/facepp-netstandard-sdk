@@ -56,7 +56,7 @@ Assert.NotNull(response.Request_Id);
 Assert.NotEmpty(response.Faces);
 ```
 
-[LOGO]: https://www.faceplusplus.com.cn/images/cn/header/face-cn.png
+[LOGO]: https://www.faceplusplus.com.cn/images/markdowns/face_color_logo.png
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE
 [NUGET]: https://www.nuget.org/packages/FacePlusPlus.SDK
