@@ -3,6 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>FacePlusPlus</RootNamespace>
+    <PackageId>FacePlusPlus.SDK</PackageId>
+    <Authors>BeanHsiang</Authors>
+    <Company>SchoolPal Online Co.,Ltd.</Company>
+    <Copyright>Copyright © BeanHsiang</Copyright>
+    <PackageProjectUrl>https://github.com/BeanHsiang/facepp-netstandard-sdk</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/BeanHsiang/facepp-netstandard-sdk/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/BeanHsiang/facepp-netstandard-sdk</RepositoryUrl>
+    <PackageTags>face++</PackageTags>
+    <Description>Face++ SDK for .NET Standard.s</Description>
+    <PackageIconUrl>https://cdn.faceplusplus.com.cn/alpha/images/touch-icon.png</PackageIconUrl>
+    <NeutralLanguage />
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>https://github.com/BeanHsiang/facepp-netstandard-sdk</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -1,6 +1,6 @@
 ![Face++][LOGO]
 
-[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+[![nuget][nuget-badge]][NUGET] [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
 -----------------------------------------------------------------------------
 
@@ -20,6 +20,16 @@ API Doc:
 
 
 ## Getting Started
+
+### Install Package
+
+Package Manager:
+
+    Install-Package FacePlusPlus.SDK -Version 1.0.0
+
+.NET CLI:
+
+    dotnet add package FacePlusPlus.SDK --version 1.0.0
 
 ### Set API key and secret
 
@@ -49,6 +59,7 @@ Assert.NotEmpty(response.Faces);
 [LOGO]: https://www.faceplusplus.com.cn/images/cn/header/face-cn.png
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE
-[fork]: https://help.github.com/articles/fork-a-repo/
+[NUGET]: https://www.nuget.org/packages/FacePlusPlus.SDK
+[nuget-badge]: https://img.shields.io/badge/nuget-1.0.0-blue.svg
 [version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
