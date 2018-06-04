@@ -10,12 +10,14 @@
     <PackageProjectUrl>https://github.com/BeanHsiang/facepp-netstandard-sdk</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/BeanHsiang/facepp-netstandard-sdk/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/BeanHsiang/facepp-netstandard-sdk</RepositoryUrl>
-    <PackageTags>face++</PackageTags>
-    <Description>Face++ SDK for .NET Standard.s</Description>
+    <PackageTags>Face++</PackageTags>
+    <Description>Face++ SDK for .NET Standard</Description>
     <PackageIconUrl>https://cdn.faceplusplus.com.cn/alpha/images/touch-icon.png</PackageIconUrl>
-    <NeutralLanguage />
+    <NeutralLanguage>en</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>https://github.com/BeanHsiang/facepp-netstandard-sdk</PackageReleaseNotes>
+    <Version>1.1.0</Version>
+    <RepositoryType>C#</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
