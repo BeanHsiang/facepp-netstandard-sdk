@@ -2,6 +2,15 @@ CHANGELOG
 ==========
 All notable changes to this project will be documented in this file.
 
+## v1.1.0 - 2018-06-04
+### Added
+* Face API
+  * Face Analyze 
+  * Face GetDetail 
+  * Face SetUserID
+* FaceLandmark
+* FaceAttributes
+
 ## v1.0.0 - 2018-06-01
 ### Added
 * Face Detect API
