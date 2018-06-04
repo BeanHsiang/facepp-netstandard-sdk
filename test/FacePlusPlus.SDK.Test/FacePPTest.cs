@@ -1,7 +1,4 @@
-using System;
 using Xunit;
-using FacePlusPlus;
-using System.IO;
 
 namespace FacePlusPlus.SDK.Test
 {
@@ -23,7 +20,8 @@ namespace FacePlusPlus.SDK.Test
         public void TestDetectImageUrl()
         {
             var client = new APIClient(API_Key, API_Secret);
-            var response = client.Face_Detect(null, image_Url: "https://www.faceplusplus.com.cn/scripts/demoScript/images/demo-pic1.jpg");
+            var attrs = "gender,age,smiling,headpose,facequality,blur,eyestatus,emotion,ethnicity,beauty,mouthstatus,eyegaze,skinstatus";
+            var response = client.Face_Detect(null, image_url: "https://www.faceplusplus.com.cn/scripts/demoScript/images/demo-pic1.jpg", return_attributes: attrs, return_landmark: 2);
             Assert.NotNull(response.Request_Id);
             Assert.NotEmpty(response.Faces);
         }
