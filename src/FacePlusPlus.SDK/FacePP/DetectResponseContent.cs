@@ -27,24 +27,16 @@ namespace FacePlusPlus.FacePP
         public FaceLandmark Landmark { get; set; }
 
         public FaceAttributes Attributes { get; set; }
-
     }
 
-    public class FaceRectangle
+    public struct FaceRectangle
     {
-        public int Top { get; set; }
+        public int top;
 
-        public int Left { get; set; }
+        public int left;
 
-        public int Width { get; set; }
+        public int width;
 
-        public int Height { get; set; }
-    }
-
-    public class FaceLandmark
-    {
-    }
-
-    public class FaceAttributes
-    { }
+        public int height;
+    };
 }
