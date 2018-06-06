@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace FacePlusPlus
 {
-    public class APIClient
+    public partial class APIClient
     {
         private APIProxy _proxy = null;
 
