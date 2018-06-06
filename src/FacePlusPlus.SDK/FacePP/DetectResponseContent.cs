@@ -38,5 +38,5 @@ namespace FacePlusPlus.FacePP
         public int width;
 
         public int height;
-    };
+    }
 }

@@ -31,12 +31,14 @@ namespace FacePlusPlus.CardPP
         public string valid_date;
     }
 
-    public class Legality : Dictionary<string, float>
+    public class Legality
     {
-        public float Edited => this["Edited"];
-        public float Photocopy => this["Photocopy"];
-        public float IDPhoto => this["ID Photo"];
-        public float Screen => this["Screen"];
-        public float TemporaryIdPhoto => this["Temporary ID Photo"];
+        public float Edited;
+        public float Photocopy;
+        [Newtonsoft.Json.JsonProperty("ID Photo")]
+        public float IDPhoto;
+        public float Screen;
+        [Newtonsoft.Json.JsonProperty("Temporary ID Photo")]
+        public float TemporaryIdPhoto;
     }
 }

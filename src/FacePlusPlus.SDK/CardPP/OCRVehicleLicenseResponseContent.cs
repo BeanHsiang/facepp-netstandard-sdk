@@ -1,5 +1,4 @@
 ﻿using FacePlusPlus.Core;
-using System.Collections.Generic;
 
 namespace FacePlusPlus.CardPP
 {
