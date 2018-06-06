@@ -25,11 +25,11 @@ API Doc:
 
 Package Manager:
 
-    Install-Package FacePlusPlus.SDK -Version 1.1.0
+    Install-Package FacePlusPlus.SDK -Version 1.2.0
 
 .NET CLI:
 
-    dotnet add package FacePlusPlus.SDK --version 1.1.0
+    dotnet add package FacePlusPlus.SDK --version 1.2.0
 
 ### Set API key and secret
 
@@ -60,6 +60,6 @@ Assert.NotEmpty(response.Faces);
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE
 [NUGET]: https://www.nuget.org/packages/FacePlusPlus.SDK
-[nuget-badge]: https://img.shields.io/badge/nuget-1.1.0-blue.svg
-[version-badge]: https://img.shields.io/badge/version-1.1.0-blue.svg
+[nuget-badge]: https://img.shields.io/badge/nuget-1.2.0-blue.svg
+[version-badge]: https://img.shields.io/badge/version-1.2.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg

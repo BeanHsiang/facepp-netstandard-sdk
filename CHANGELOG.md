@@ -2,11 +2,28 @@ CHANGELOG
 ==========
 All notable changes to this project will be documented in this file.
 
+## v1.2.0 - 2018-06-06
+### Added
+* HumanBody API
+  * HumanBody Detect
+  * HumanBody Segment
+  * HumanBody Gesture
+* OCR API
+  * OCR ID Card
+  * OCR Driver License
+  * OCR Vehicle license
+  * OCR Bank Card
+* Image API
+  * Image Detect Scene And Object
+  * Image Recognize Text
+  * Image Merge Face
+  * Image License Plate
+
 ## v1.1.0 - 2018-06-04
 ### Added
 * Face API
-  * Face Analyze 
-  * Face GetDetail 
+  * Face Analyze
+  * Face GetDetail
   * Face SetUserID
 * FaceLandmark
 * FaceAttributes
