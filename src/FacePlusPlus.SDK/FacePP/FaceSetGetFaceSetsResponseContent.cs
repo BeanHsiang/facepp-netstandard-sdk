@@ -7,8 +7,8 @@ namespace FacePlusPlus.FacePP
         /// <summary>
         /// face set token
         /// </summary>
-        public FaceSet FaceSets { get; set; }
-        
+        public FaceSet[] FaceSets { get; set; }
+
         /// <summary>
         /// sequence start value in next request
         /// </summary>

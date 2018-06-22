@@ -318,7 +318,7 @@ namespace FacePlusPlus
         /// <param name="outer_id">unique custom id</param>
         /// <param name="start">sequence in face set, [1, 1000], maybe "next" value in lastest response</param>
         /// <returns></returns>
-        public async Task<FacePP.FaceSetGetDetailResponseContent> FaceSet_GetDetailAsync(string faceset_token, string outer_id, int? start = null)
+        public async Task<FacePP.FaceSetGetDetailResponseContent> FaceSet_GetDetailAsync(string faceset_token, string outer_id = "", int? start = null)
         {
             var request = new FacePP.FaceSetGetDetailRequestContent()
             {
@@ -337,7 +337,7 @@ namespace FacePlusPlus
         /// <param name="outer_id">unique custom id</param>
         /// <param name="start">sequence in face set, [1, 1000], maybe "next" value in lastest response</param>
         /// <returns></returns>
-        public FacePP.FaceSetGetDetailResponseContent FaceSet_GetDetail(string faceset_token, string outer_id, int? start = null)
+        public FacePP.FaceSetGetDetailResponseContent FaceSet_GetDetail(string faceset_token, string outer_id = "", int? start = null)
         {
             var response = FaceSet_GetDetailAsync(faceset_token, outer_id, start);
             return response.Result;
@@ -350,7 +350,7 @@ namespace FacePlusPlus
         /// <param name="outer_id">unique custom id</param> 
         /// <param name="check_empty">custom information</param>
         /// <returns></returns>
-        public async Task<FacePP.FaceSetDeleteResponseContent> FaceSet_DeleteAsync(string faceset_token, string outer_id, int? check_empty = null)
+        public async Task<FacePP.FaceSetDeleteResponseContent> FaceSet_DeleteAsync(string faceset_token, string outer_id = "", int? check_empty = null)
         {
             var request = new FacePP.FaceSetDeleteRequestContent()
             {
@@ -369,7 +369,7 @@ namespace FacePlusPlus
         /// <param name="outer_id">unique custom id</param> 
         /// <param name="check_empty">custom information</param>
         /// <returns></returns>
-        public FacePP.FaceSetDeleteResponseContent FaceSet_Delete(string faceset_token, string outer_id, int? check_empty = null)
+        public FacePP.FaceSetDeleteResponseContent FaceSet_Delete(string faceset_token, string outer_id = "", int? check_empty = null)
         {
             var response = FaceSet_DeleteAsync(faceset_token, outer_id, check_empty);
             return response.Result;

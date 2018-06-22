@@ -32,16 +32,27 @@ namespace FacePlusPlus
                     using (var client = new HttpClient())
                     {
                         var response = await client.PostAsync(content.BuildUrl(Base_Url), multipartFormDataContent).ConfigureAwait(false);
-                        var result = JsonConvert.DeserializeObject<TOut>(await response.Content.ReadAsStringAsync());
-                        if (response.StatusCode == HttpStatusCode.OK)
+                        if (response.StatusCode == HttpStatusCode.RequestEntityTooLarge)
                         {
-                            return result;
+                            throw new HttpRequestException(response.ReasonPhrase);
                         }
-                        else
+                        try
                         {
-                            if (retry-- <= 0)
-                                throw new HttpRequestException(result.Error_Message);
-                            Thread.Sleep(5000);
+                            var result = JsonConvert.DeserializeObject<TOut>(await response.Content.ReadAsStringAsync());
+                            if (response.StatusCode == HttpStatusCode.OK)
+                            {
+                                return result;
+                            }
+                            else
+                            {
+                                if (retry-- <= 0)
+                                    throw new HttpRequestException(result.Error_Message);
+                                Thread.Sleep(5000);
+                            }
+                        }
+                        catch (System.Exception ex)
+                        {
+                            throw new HttpRequestException(ex.Message);
                         }
                     }
                 }
