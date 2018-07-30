@@ -2,6 +2,17 @@ CHANGELOG
 ==========
 All notable changes to this project will be documented in this file.
 
+## v1.3.0 - 2018-07-30
+### Added
+* Face Beautify API
+* Unit Test
+  * OCR BankCard Test
+
+### Fixed Bugs
+* added RequestEntityTooLarge response handling
+* fixed error non-array property "facesets" in FaceSetGetFaceSetsResponseContent
+* fixed default parameter value in "FaceSet_GetDetailAsync"
+
 ## v1.2.0 - 2018-06-06
 ### Added
 * HumanBody API
