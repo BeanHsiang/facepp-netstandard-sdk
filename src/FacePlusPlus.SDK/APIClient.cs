@@ -161,6 +161,46 @@ namespace FacePlusPlus
             return response.Result;
         }
 
+        /// <summary>
+        /// Face Beautify Async
+        /// </summary>
+        /// <param name="image_path">path of image file</param>
+        /// <param name="image_base64">byte array of image file base, encoded by base64</param>
+        /// <param name="image_url">url of image file</param>
+        /// <param name="whitening">whitening level</param>
+        /// <param name="smoothing">smoothing level</param>
+        /// <returns></returns>
+        public async Task<FacePP.BeautifyResponseContent> Face_BeautifyAsync(string image_path, byte[] image_base64 = null, string image_url = "", int? whitening = null, int? smoothing = null)
+        {
+            using (var request = new FacePP.BeautifyRequestContent()
+            {
+                Image_Path = image_path,
+                Image_Base64 = image_base64,
+                Image_Url = image_url,
+                Whitening = whitening,
+                Smoothing = smoothing
+            })
+            {
+                var response = await _proxy.Invoke<MultipartFormDataContent, FacePP.BeautifyResponseContent>(request);
+                return response;
+            }
+        }
+
+        /// <summary>
+        /// Face Beautify
+        /// </summary>
+        /// <param name="image_path">path of image file</param>
+        /// <param name="image_base64">byte array of image file base, encoded by base64</param>
+        /// <param name="image_url">url of image file</param>
+        /// <param name="whitening">whitening level</param>
+        /// <param name="smoothing">smoothing level</param>
+        /// <returns></returns>
+        public FacePP.BeautifyResponseContent Face_Beautify(string image_path, byte[] image_base64 = null, string image_url = "", int? whitening = null, int? smoothing = null)
+        {
+            var response = Face_BeautifyAsync(image_path, image_base64, image_url, whitening, smoothing);
+            return response.Result;
+        }
+
         #endregion
 
         #region FaceSet
